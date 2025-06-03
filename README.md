@@ -4,7 +4,7 @@ An interactive healthcare AI app that predicts the likelihood of diabetes based 
 
 ## 🚀 Live App
 
-👉 [Click to Try the App](https://snehithachowdary-ai-diabetes-streamlit-app.streamlit.app)
+👉 [Click to Try the App](https://ai-diabetes-app-app-kxqzpxpayw85pla6sqrfhe.streamlit.app/)
 
 ## 📊 Features
 
