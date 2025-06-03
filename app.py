@@ -51,9 +51,12 @@ if submit:
     shap_values = explainer(shap_input_df)
 
     st.subheader("📊 Feature Impact (SHAP Explanation):")
+    import shap
     import matplotlib.pyplot as plt
 
-# Create figure and plot SHAP waterfall inside it
-    fig = plt.figure()
-    shap.plots.waterfall(shap_values[0], show=False)
-    st.pyplot(fig)
+# Safer rendering: smaller figure + fewer features
+    shap.plots.bar(shap_values[0], max_display=5, show=False)
+    st.pyplot(plt.gcf())
+    plt.clf()
+
+
